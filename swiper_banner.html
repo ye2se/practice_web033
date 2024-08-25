@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        .swiper {
+            width: 1200px;
+            overflow: hidden;
+        }
+
+        .swiper-slide {
+            width: auto;
+            background: tomato;
+            box-sizing: border-box;
+        }
+
+        .swiper-wrapper {
+            transition-timing-function: linear;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="loop-swiper swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                banner01
+            </div>
+            <div class="swiper-slide">
+                banner01
+            </div>
+            <div class="swiper-slide">
+                banner01
+            </div>
+            <div class="swiper-slide">
+                banner013333333
+            </div>
+            <div class="swiper-slide">
+                banner01aaaaaaaa
+            </div>
+            <div class="swiper-slide">
+                banner01
+            </div>
+            <div class="swiper-slide">
+                banner01
+            </div>
+            <div class="swiper-slide">
+                banner01zzzzzzzzzzzz
+            </div>
+            <div class="swiper-slide">
+                banner011133
+            </div>
+            <div class="swiper-slide">
+                banner01
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS-->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+        var swiper = new Swiper(".loop-swiper", {
+            centeredSlides: true,
+            loop: true,
+            loopedSlides: 8,
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            speed: 2000,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
